@@ -7,7 +7,7 @@
   "homepage_url": "https://github.com/feranick/Thunderbird-Google-News-Tab/",
   "browser_specific_settings": {
     "gecko": {
-      "id": "feranick.google-News-tab@addons.thunderbird.net",
+      "id": "feranick.google-news-tab@addons.thunderbird.net",
       "strict_min_version": "106.0"
     }
   },  
