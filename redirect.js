@@ -17,3 +17,22 @@ browser.webRequest.onBeforeSendHeaders.addListener(
   { urls: ["https://news.google.com/*", "https://*.google.com/*"] },
   ["blocking", "requestHeaders"]
 );
+
+// Create the context menu item
+browser.menus.create({
+  id: "search-google-news",
+  title: "Search Google News for \"%s\"",
+  contexts: ["selection"]
+});
+
+// Add a listener for when the menu item is clicked
+browser.menus.onClicked.addListener((info, tab) => {
+  if (info.menuItemId === "search-google-news" && info.selectionText) {
+    // Encode the selected text to make it URL-safe
+    const query = encodeURIComponent(info.selectionText);
+    const searchUrl = `https://news.google.com/search?q=${query}`;
+    
+    // Open the search URL in a new content tab
+    browser.tabs.create({ url: searchUrl });
+  }
+});
