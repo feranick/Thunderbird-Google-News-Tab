@@ -1,6 +1,6 @@
 # Google News Tab
 Unofficial Google News add-on for Thunderbird, it adds a button in Spaces that opens a Google News tab in Thunderbird.
-The [home page](https://addons.mozilla.org/thunderbird/addon/thundernews/) of the extension contains some pictures and reviews.
+The [home page](https://addons.thunderbird.net/en-US/thunderbird/addon/google-news-spaces-tab/) of the extension contains the latest code.
 
 #### Installing 
 A new Google News icon should appear in the Spaces Toolbar of Thunderbird. Click to open.

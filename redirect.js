@@ -1,5 +1,5 @@
 browser.spacesToolbar.addButton('GoogleNews', {
-    title: "Google News",
+    title: browser.i18n.getMessage("toolbarButtonTitle"),
     defaultIcons: "skin/google_news_icon.svg",
     url: "https://news.google.com/"
 });
@@ -21,7 +21,7 @@ browser.webRequest.onBeforeSendHeaders.addListener(
 // Create the context menu item
 browser.menus.create({
   id: "search-google-news",
-  title: "Search Google News for \"%s\"",
+  title: browser.i18n.getMessage("contextMenuTitle"),
   contexts: ["selection"]
 });
 
